@@ -4,9 +4,9 @@ exports.handler = (event, context, callback) => {
     
     var request = require('request');
 
-    var siteName = 'LexusAustralia'; // fill with the Eloqua Site Name
-    var username = 'Ticiana.Andrade'; // fill with your Eloqua username
-    var password = 'T1c14n4*'; // fill with your Eloqua password
+    var siteName = ''; // fill with the Eloqua Site Name
+    var username = ''; // fill with your Eloqua username
+    var password = ''; // fill with your Eloqua password
     
     var auth = siteName + '\\' + username + ':' + password;
     var encodedData = new Buffer(auth).toString('base64');
